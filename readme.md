@@ -426,4 +426,4 @@ Distribuído sob a [Licença MIT](LICENSE).
 
 ---
 
-> **Desenvolvido com ❤️ para a comunidade agrícola**
+> **Desenvolvido para a comunidade agrícola**

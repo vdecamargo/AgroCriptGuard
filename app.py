@@ -262,5 +262,5 @@ def main():
         show_main_app(st.session_state.storage_manager)
 
 
-if name == "main":
+if __name__ == "__main__":
     main()

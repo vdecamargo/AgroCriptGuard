@@ -36,11 +36,11 @@ The application uses the **Authenticated Encryption with Associated Data (AEAD)*
 
 ---
 
-## 📦 **Installation & Setup**
+## 📦 **Installation & Setup (Windows)**
 
 ### Prerequisites
-* **Python 3.10+** - [Download](https://www.python.org/downloads/)
-* **Git** (Optional) - [Download](https://git-scm.com/)
+* **Python 3.10 or higher** - [Download for Windows](https://www.python.org/downloads/windows/)
+* **Git** (Optional) - [Download for Windows](https://git-scm.com/download/win)
 
 ---
 
@@ -51,64 +51,61 @@ The application uses the **Authenticated Encryption with Associated Data (AEAD)*
 
 git clone [https://github.com/your-username/AgroCryptGuard.git](https://github.com/your-username/AgroCryptGuard.git)
 cd AgroCryptGuard
-Option B (Manual): Download the ZIP, extract it, and open your terminal inside the folder.
+
+Option B (Manual): Download the project as a ZIP file, extract it to a folder, and open the Command Prompt (CMD) or PowerShell inside that folder.
 
 2. Create a Virtual Environment
 
-# Windows
 python -m venv venv
 
-# macOS/Linux
-python3 -m venv venv
 3. Activate the Environment
+Using PowerShell (Recommended):
 
-# Windows (PowerShell)
 .\venv\Scripts\Activate.ps1
 
-# Windows (CMD)
-venv\Scripts\activate.bat
-
-# macOS/Linux
-source venv/bin/activate
 4. Install Dependencies
 
 pip install --upgrade pip
 pip install -r requirements.txt
+
 🚀 How to Use
 Running the App
-With the environment activated, run:
-
+With the environment activated, simply run:
 
 streamlit run app.py
-The browser will automatically open at http://localhost:8501.
+
+Your web browser will automatically open at http://localhost:8501.
 
 🔄 Workflow
-First Access: Set your master password. Warning: There is no password recovery.
+First Access: Set your master password (minimum 8 characters). Warning: There is no password recovery.
 
-New Entry: Input your crop or financial data.
+New Entry: Input your crop, input, or financial data.
 
-Encryption: When saving, the system encrypts the data into a .enc file.
+Encryption: When saving, the system encrypts the data into a secure .enc file.
 
-Viewing: Data is decrypted in-memory only while the app is active.
+Viewing: Data is decrypted in-memory only while the app is active and disappears when closed.
 
 📁 Project Structure
 
 AgroCryptGuard/
-├── app.py             # Streamlit UI
-├── auth.py            # Argon2id Authentication
-├── crypto.py          # AES-GCM Logic
-├── storage.py         # File Handling
+├── app.py             # Streamlit UI (User Interface)
+├── auth.py            # Argon2id Authentication Management
+├── crypto.py          # AES-GCM Encryption Logic
+├── storage.py         # Encrypted File Handling
+├── config.py          # Security Parameters
 ├── data/
 │   └── data.enc       # Encrypted Database
-├── auth.json          # Password Verifier
-└── requirements.txt   # Dependencies
+├── auth.json          # Password Verifier (Generated on 1st access)
+└── requirements.txt   # Required Libraries
+
+
 ⚠️ Important Notices
 [!IMPORTANT]
-BACKUP: You are responsible for your data. Always keep a backup of auth.json and the data/ folder.
+BACKUP: You are the sole responsible for your data. Always keep a backup of the auth.json file and the data/ folder on a secure USB drive or external HDD.
 
-Lost Password: If you forget your master password, all data is permanently lost.
+Lost Password: If you forget your master password, all data is permanently lost. There is no "Reset Password" button in local end-to-end encryption.
 
-Privacy: 100% offline. No one but you has access to your records.
+Privacy: 100% offline. No agency, company, or developer can access your records.
 
 📝 License
 Distributed under the MIT License.

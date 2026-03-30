@@ -110,4 +110,15 @@ Privacy: 100% offline. No agency, company, or developer can access your records.
 📝 License
 Distributed under the MIT License.
 
+## 🤝 Acknowledgments
+
+This project is built upon the incredible work of the open-source community. Special recognition goes to the following libraries and frameworks that make **AgroCryptGuard** possible:
+
+* **[Streamlit](https://streamlit.io/)** - For providing an intuitive and powerful framework for the application's interface.
+* **[Cryptography.io](https://cryptography.io/)** - For the robust implementation of **AES-GCM (256-bit)**, ensuring the integrity and confidentiality of agricultural data.
+* **[Argon2-cffi](https://argon2-cffi.readthedocs.io/)** - For the state-of-the-art **Argon2id** password hashing implementation, providing superior protection against modern brute-force attacks.
+* **[Python Software Foundation](https://www.python.org/)** - For the versatile programming language and its reliable standard libraries.
+
+Their commitment to security and open-source development is what allows projects like this to protect user privacy effectively.
+
 Developed for the agricultural community.

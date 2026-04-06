@@ -14,7 +14,7 @@ from config import ENCRYPTED_DATA_FILE
 class StorageManager:
     """Gerencia armazenamento criptografado de dados."""
     
-    def init(self, crypto_manager: CryptoManager):
+    def __init__(self, crypto_manager: CryptoManager):
         """
         Inicializa o gerenciador de armazenamento.
         

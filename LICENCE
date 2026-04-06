@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 [Seu Nome]
+Copyright (c) 2025 Vinícius Manuel de Camargo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-------------------------------------------------------------------------------
+Third-Party Software Notices
+This project utilizes the following open-source components:
+
+- cryptography.io: Dual-licensed under the Apache License 2.0 and BSD 3-Clause License.
+- argon2-cffi: Licensed under the MIT License.
+- Streamlit: Licensed under the Apache License 2.0.
+
+All respective copyrights and license terms for these components are maintained 
+by their original authors and are included within the installed package 
+distributions.
